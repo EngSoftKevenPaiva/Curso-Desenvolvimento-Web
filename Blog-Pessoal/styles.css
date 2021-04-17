@@ -1,0 +1,233 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap";
+
+:root{
+    --collor-header: #F2FEFF;
+    --collor-background: linear-gradient(90deg, rgba(8,56,101,1) 0%, rgba(16,89,158,1) 100%);;
+    --collor-text-effect: rgb(148, 148, 148);
+    --collor-line-border: #86AEB3;
+    --collor-card:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(8,53,95,1) 100%);
+    --collor-card-contrast: #0b4072;
+}
+
+body{
+    background: var(--collor-background);
+    Color: white;
+    font-family: 'Roboto';
+    margin-top: 4%;
+    margin-bottom: 6%;
+    text-decoration: black;
+}
+header {
+    padding: 15px 15px;
+}
+header a{
+    color: black;
+    font-size: 20px;
+    text-decoration: black;
+    text-shadow: 2px 2px 2px rgb(221, 220, 220);
+}
+header a:hover{
+    color: var(--collor-text-effect);
+    transition: color 500ms;
+}
+
+.contato{
+    color:black;
+    text-emphasis:initial;
+    font-size: large;
+    text-decoration: black;
+    text-shadow: 2px 2px 2px rgb(221, 220, 220);
+}
+.labeltxt{
+    color:black;
+}
+.img-fluid{
+    width: 100% \9;
+    max-width: 100%;
+    max-height: 100% \12;
+}
+/* ----------------------- BOTAO ----------------------*/
+.button {
+    border: 10px;
+}
+/* ----------------------- LINKS ----------------------*/
+.links div{
+    text-align: center;
+
+}
+.links a {
+    color: black;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0 16px;
+    text-decoration: none;
+}
+.links a:hover{
+    color: var(--collor-text-effect);
+    transition: color 500ms;
+}
+
+/* ----------------------- CARROSEL ----------------------*/
+
+.carousel-item{
+    
+    align-items: center;
+}
+
+#carouselExampleIndicators{
+    padding: 5%;
+    width: 100%;
+    height: auto;
+}
+/* ----------------------- WRAPPER ----------------------*/
+#wrapper {
+    text-align: center;
+    padding-top: 30px;
+}
+#wrapper img{
+    border-radius: 50%;
+    border: 3px solid whitesmoke;
+    margin-bottom: 32px;
+    height: 300px;
+}
+
+#wrapper h1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: initial;
+}
+
+#wrapper h2 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-top: 8px;
+    opacity: 0.9;
+    color: white;
+    text-decoration: none;
+}
+
+#wrapper h2 a:link{
+    color: white;
+    text-decoration: none;
+}
+
+#wrapper h2 a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+#wrapper h2 a:hover{
+    color: var(--collor-text-effect);
+    transition: color 500ms;
+}
+
+#wrapper p{
+    max-width: 500px;
+    margin: 32px auto;
+    font-size: 20px;
+    line-height: 28px;
+
+}
+
+#lists {
+    text-align:justify;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 30 auto;
+}
+
+#lists ol {
+    padding-left: 20px;
+}
+
+#redes {
+    padding: 10px 15px;
+    border-top: 0.5px solid white;
+    background-color: var(--collor-header);
+}
+
+.links img{
+    border-radius: 50%;
+    height: 30px;
+    margin-bottom: -5px;
+}
+
+/* ----------------------- CARDS ----------------------*/
+
+.card {
+    background-color:var(--collor-card);
+    text-align: center;
+    font-size: 16px;
+}
+.img-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+
+.card__content,
+.card__info{
+    padding: 24px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    
+}
+
+.card__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 300px;
+    height: auto;
+    
+}
+.card__ingresso{
+    background-color: var(--collor-card-contrast);
+    border-radius: 8%;
+    filter: brightness(100%);
+    padding: 5px;
+}
+
+/* ----------------- MODAL-OVERLAY ----------------*/
+
+.modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal{
+    background-color: white;
+    width: 91%;
+    height: 90%;
+    margin: 5vh auto;
+    position: relative;
+}
+
+.modal .close-modal{
+    color: black;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    cursor: pointer;
+}
+
+/* ----------------- MODAL-OVERLAY ACTIVE ----------------*/
+
+.modal-overlay.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+}
